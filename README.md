@@ -44,19 +44,7 @@ Backend
 Python
 Flask
 Flask-CORS
-🏗️ Architecture
-emotion-app/
-│
-├── backend/
-│   ├── app.py              # Flask API
-│   ├── preprocess.py       # Emotion prediction logic
-│   └── uploads/            # Stored audio files
-│
-└── frontend/
-    ├── src/
-    │   ├── components/     # Reusable UI components
-    │   ├── pages/          # Main dashboard page
-    │   └── App.jsx
+
 ✨ Features
 🎧 Audio upload (drag & drop supported)
 🤖 Speech emotion prediction
