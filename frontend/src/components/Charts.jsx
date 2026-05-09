@@ -11,7 +11,7 @@ import {
   Legend,
 } from "recharts";
 
-const COLORS = ["#3b82f6", "#22c55e", "#f59e0b", "#ef4444", "#a855f7", "#06b6d4"];
+const COLORS = ["#CE6A6B", "#EBACA2", "#BED3C3", "#4A919E", "#5784BA", "#212E53"];
 
 export default function Charts({ result }) {
   if (!result) return null;

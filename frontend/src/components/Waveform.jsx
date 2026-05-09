@@ -19,9 +19,9 @@ export default function Waveform({ url }) {
     // create waveform
     waveRef.current = WaveSurfer.create({
       container: ref.current,
-      waveColor: "#3b82f6",
-      progressColor: "#22c55e",
-      cursorColor: "#94a3b8",
+      waveColor: "#585858",
+      progressColor: "#F2D5DC",
+      cursorColor: "#D6BCA5",
       height: 80,
       barWidth: 2,
       barGap: 2,

@@ -27,14 +27,14 @@ export default function Dashboard() {
 
       {/* ===== SIDEBAR ===== */}
       <aside className="sidebar">
-        <h2>🎮 Emotion AI</h2>
+        <h2> Emotion AI</h2>
         <Settings config={config} setConfig={setConfig} />
       </aside>
 
       {/* ===== MAIN CONTENT ===== */}
       <main className="content">
 
-        <h1>🎧 Speech Emotion Recognition</h1>
+        <h1>Speech Emotion Recognition</h1>
 
         <UploadBox
            setResult={setResult}

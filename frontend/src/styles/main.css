@@ -1,10 +1,8 @@
 /* ===== RESET ===== */
 body {
-  background-image: url("/src/assets/OIP.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #EEF4FA;
+  color: #4A2C35;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ===== APP LAYOUT ===== */
@@ -12,6 +10,7 @@ body {
   display: flex;
   height: 100vh;
 }
+
 html, body, #root {
   width: 100%;
   height: 100%;
@@ -22,13 +21,14 @@ html, body, #root {
 /* ===== SIDEBAR ===== */
 .sidebar {
   width: 260px;
-  background: linear-gradient(180deg, #ef72bf, #381125);
-  border-right: 1px solid rgba(190, 47, 152, 0.05);
+  background: linear-gradient(180deg, #734158, #5A2E43);
+  border-right: 1px solid rgba(115, 65, 88, 0.12);
   padding: 20px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
 }
 
 .sidebar h2 {
-  color: #650233;
+  color: #F8EEF1;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -41,28 +41,34 @@ html, body, #root {
 
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* VERY IMPORTANT */
+  align-items: stretch;
 }
 
 /* ===== TITLE ===== */
 h1 {
   text-align: left;
   margin-bottom: 25px;
+  color: #5A2E43;
+  font-weight: 600;
 }
 
 /* ===== UPLOAD ===== */
 .upload-box {
-  border: 2px dashed rgba(194, 37, 113, 0.4);
+  border: 2px dashed #C67F89;
   padding: 35px;
   text-align: center;
-  border-radius: 16px;
+  border-radius: 18px;
   cursor: pointer;
-  background: rgba(185, 70, 154, 0.05);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
   transition: 0.3s;
+  color: #734158;
+  box-shadow: 0 4px 15px rgba(115, 65, 88, 0.05);
 }
 
 .upload-box:hover {
-  background: rgba(224, 30, 195, 0.1);
+  background: rgba(242, 213, 220, 0.35);
+  transform: translateY(-2px);
 }
 
 /* ===== CARDS ===== */
@@ -70,31 +76,34 @@ h1 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 15px;
+  gap: 18px;
   margin-top: 20px;
 }
 
 .card {
-  background: linear-gradient(145deg,  #793b61, #5a1c3c);
-  border: 1px solid rgba(160, 38, 148, 0.2);
-  padding: 18px;
-  border-radius: 14px;
-  box-shadow: 0 0 15px rgba(120, 56, 103, 0.08);
-  transition: 0.3s;
+  background: linear-gradient(145deg, #C67F89, #B39084);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(115, 65, 88, 0.08);
+  transition: 0.3s ease;
+  color: white;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 25px rgba(197, 34, 170, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(115, 65, 88, 0.18);
 }
 
 .card h4 {
-  color: #d66ca1;
+  color: #F8EEF1;
   margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .card h2 {
-  color: #e45d9a;
+  color: white;
+  font-weight: 700;
 }
 
 /* ===== MAIN ===== */
@@ -125,6 +134,7 @@ h1 {
 audio {
   width: 100%;
   margin-top: 10px;
+  border-radius: 10px;
 }
 
 /* ===== CHARTS ===== */
@@ -136,22 +146,25 @@ audio {
 
 /* ===== TOP 3 ===== */
 .top3 {
-  background: #b72483;
-  border: 1px solid rgba(177, 58, 132, 0.341);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(179, 144, 132, 0.2);
   padding: 20px;
-  border-radius: 14px;
+  border-radius: 18px;
+  color: #734158;
+  box-shadow: 0 4px 15px rgba(115, 65, 88, 0.06);
 }
 
 .top3 h3 {
   margin-bottom: 15px;
-  color: #bc40a7;
+  color: #734158;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-  padding: 8px 0;
-  border-bottom: 1px solid rgba(207, 62, 137, 0.5);
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(179, 144, 132, 0.25);
 }
 
 /* ===== SETTINGS ===== */
@@ -163,18 +176,20 @@ audio {
 
 .card select {
   width: 100%;
-  padding: 5px;
-  border-radius: 6px;
-  background: #db4785;
-  color: white;
-  border: 1px solid rgba(212, 64, 185, 0.388);
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #734158;
+  border: 1px solid rgba(115, 65, 88, 0.15);
+  outline: none;
 }
 
 /* ===== LOADER ===== */
 .loader {
   text-align: center;
   margin-top: 15px;
-  color: #c52297;
+  color: #734158;
+  font-weight: 500;
 }
 
 /* ===== RESPONSIVE ===== */
